@@ -1,0 +1,23 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens160:
+      dhcp4: no
+      dhcp6: no
+      addresses: [11.0.0.2/24]
+      gateway4: 11.0.0.1
+      nameservers:
+        addresses: [1.1.1.1, 8.8.8.8]
+    ens192: {}
+  vlans:
+    vlan.888:
+      id: 888
+      link: ens192
+      dhcp4: no
+      addresses: [192.168.88.2/24]
+      routes:
+        - to: 10.0.0.0/8
+          via: 192.168.88.1
+        - to: 172.16.0.0/12
+          via: 192.168.88.1

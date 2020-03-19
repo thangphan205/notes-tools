@@ -18,7 +18,7 @@ Ctrl + b + d => Press [Ctrl], [b], [d] button at the same time.
 |Ctrl+b  [ ( ]                   | Move to previous session|
 |Ctrl+b  [ ) ]                   | Move to next session|
 
-## 2. Shortcut Pane, Windows
+## 2. Shortcut
 
 |Shortcut           |Description        |
 |-------------------|-------------------|
